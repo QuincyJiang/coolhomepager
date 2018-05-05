@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CoolMenuFrameLayout">
+        <attr name="num" format="enum">
+            <enum name="one" value="1" />
+            <enum name="two" value="2" />
+            <enum name="three" value="3" />
+            <enum name="four" value="4" />
+            <enum name="five" value="5" />
+        </attr>
+    </declare-styleable>
+    <string-array name="column">
+        <item>@string/setting</item>
+        <item>@string/about_me</item>
+        <item>@string/hot_spot</item>
+        <item>@string/home_page</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+<string name="about_me">个人主页</string>
+<string name="home_page">首页</string>
+<string name="setting">设置</string>
+<string name="hot_spot">热点</string>
+    </resources>
