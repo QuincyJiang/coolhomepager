@@ -1,4 +1,4 @@
-package com.jiangxq.coolmenuLib;
+package com.jiangxq.coolmenu;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.foocoder.coolmenu.R;
 
 public class Fragment3 extends Fragment {
     @Override

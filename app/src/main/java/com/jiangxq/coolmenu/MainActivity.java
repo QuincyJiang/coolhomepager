@@ -1,4 +1,4 @@
-package com.jiangxq.coolmenuLib;
+package com.jiangxq.coolmenu;
 
 import android.os.Bundle;
 import android.support.annotation.IdRes;
@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.foocoder.coolmenu.R;
+import com.jiangxq.coolmenuLib.CoolMenuFrameLayout;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -46,10 +46,10 @@ public class MainActivity extends AppCompatActivity {
         coolMenuFrameLayout.setTitles(titleList);
 //        coolMenuFrameLayout.setMenuIcon(R.drawable.menu2);
 
-        fragments.add(new Fragment1());
-        fragments.add(new Fragment2());
-        fragments.add(new Fragment3());
-        fragments.add(new Fragment4());
+        fragments.add(new com.jiangxq.coolmenu.Fragment1());
+        fragments.add(new com.jiangxq.coolmenu.Fragment2());
+        fragments.add(new com.jiangxq.coolmenu.Fragment3());
+        fragments.add(new com.jiangxq.coolmenu.Fragment4());
 
         FragmentPagerAdapter adapter = new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override

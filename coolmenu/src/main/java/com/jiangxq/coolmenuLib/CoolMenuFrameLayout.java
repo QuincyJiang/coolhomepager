@@ -91,7 +91,6 @@ public final class CoolMenuFrameLayout extends FrameLayout {
                 TranslateLayout frameLayout = new TranslateLayout(mContext);
                 frameLayout.setId(ids[i]);
                 frameLayout.setTag(i);
-//                frameLayout.setOnClickListener(mMenuChooser);
                 frameLayout.setOnMenuClickListener(menuListener);
                 if(mMenuIcon != null) {
                     frameLayout.setMenuIcon(mMenuIcon);
@@ -255,11 +254,8 @@ public final class CoolMenuFrameLayout extends FrameLayout {
         }
     }
 
-//    private class MenuChooser implements OnClickListener {
-//
-//        @Override
-        public void onClick(View v) {
-            if (opening) {
+    public void onClick(View v) {
+        if (opening) {
                 chosen = (int) v.getTag();
                 for (int i = 0; i < num; i++) {
                     if (i <= chosen) {
@@ -269,10 +265,9 @@ public final class CoolMenuFrameLayout extends FrameLayout {
                     }
                 }
                 mMenuOpenAnimators[chosen].reverse();
-            }
-            opening = false;
         }
-//    }
+            opening = false;
+    }
 
     private class MenuListener implements TranslateLayout.OnMenuClickListener {
 
@@ -286,8 +281,4 @@ public final class CoolMenuFrameLayout extends FrameLayout {
             onClick(view);
         }
     }
-
-
-
-
 }

@@ -64,13 +64,9 @@ class TranslateLayout extends FrameLayout implements View.OnClickListener {
         }
     }
 
-//    @Override
-//    public boolean dispatchTouchEvent(MotionEvent ev) {
-//        return  ! ((CoolMenuFrameLayout) getParent()).isOpening();
-//    }
-
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
+        Log.d(TAG,"onInterceptTouchEvent---->"+((CoolMenuFrameLayout) getParent()).isOpening());
         return ((CoolMenuFrameLayout) getParent()).isOpening();
     }
 
@@ -127,7 +123,6 @@ class TranslateLayout extends FrameLayout implements View.OnClickListener {
     }
 
     public void setMenuAlpha(float fraction) {
-//        mMenu.setAlpha(fraction);
         mMenu.setScaleX(fraction);
         mMenu.setScaleY(fraction);
         mTitle.setTranslationX((1 - fraction) * -mTitleTrans);

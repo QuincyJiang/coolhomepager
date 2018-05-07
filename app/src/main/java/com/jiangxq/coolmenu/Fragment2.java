@@ -1,4 +1,4 @@
-package com.jiangxq.coolmenuLib;
+package com.jiangxq.coolmenu;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -8,24 +8,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.foocoder.coolmenu.R;
 
-public class Fragment1 extends Fragment {
+public class Fragment2 extends Fragment {
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.layout1, container, false);
-        return view;
+
+        return inflater.inflate(R.layout.layout2, container, false);
     }
 
     @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
 
     @Override

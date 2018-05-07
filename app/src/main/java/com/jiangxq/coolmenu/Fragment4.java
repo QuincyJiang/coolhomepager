@@ -1,4 +1,4 @@
-package com.jiangxq.coolmenuLib;
+package com.jiangxq.coolmenu;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,7 +12,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.foocoder.coolmenu.R;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
